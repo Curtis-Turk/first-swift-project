@@ -7,14 +7,22 @@
 
 import SwiftUI
 
-enum Emoji: String {
+enum Emoji: String, CaseIterable {
     case 🎉, 🏔️, 🐋, 🦬
 }
 
 struct ContentView: View {
-    var selection : Emoji = .🎉
+    @State var selection : Emoji = .🎉
     var body: some View {
-        Text(selection.rawValue)
+        VStack {
+            Text(selection.rawValue)
+                .font(.system(size: 150))
+            Picker("Select Emoji",selection: $selection){
+                ForEach(Emoji.allCases, id: \.self){
+                    emoji in Text(emoji.rawValue)
+                }
+            }
+        }
     }
 }
 
