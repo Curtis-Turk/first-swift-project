@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum Emoji: String, CaseIterable {
-    case 🎉, 🏔️, 🐋, 🦬
+    case 🎉, 🏔️, 🐋, 🦬, 🚀
 }
 
 struct ContentView: View {
@@ -21,8 +21,8 @@ struct ContentView: View {
                 ForEach(Emoji.allCases, id: \.self){
                     emoji in Text(emoji.rawValue)
                 }
-            }
-        }
+            }.pickerStyle(.segmented)
+        }.padding()
     }
 }
 

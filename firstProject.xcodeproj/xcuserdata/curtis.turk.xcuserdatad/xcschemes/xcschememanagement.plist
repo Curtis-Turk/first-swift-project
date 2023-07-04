@@ -6,8 +6,28 @@
 	<dict>
 		<key>firstProject.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>A83EC77C2A5310E60017B6F3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A83EC78C2A5310E70017B6F3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A83EC7962A5310E70017B6F3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
